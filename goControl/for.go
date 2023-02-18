@@ -3,9 +3,12 @@ package main
 import "fmt"
 
 func main() {
-	for i := 0; i < 3; i++ {
-		for j := 3; j > 0; j-- {
-			fmt.Print(i, " ", j, "\n")
-		}
+	// declaring and initializing sum as integer with initial value of 1
+	sum := 1
+	// var sum int = 1
+	// conditioned controlled iteration
+	for sum < 100 {
+		sum += sum
+		fmt.Print(sum, "\n")
 	}
 }
